@@ -72,7 +72,7 @@ void MainWindow::on_actionIniciar_triggered()
     if(ejec==false){
         int cont;
         string linea,pxs,pys,ms,rs,vxs,vys;
-        fstream ifs("Planetas.txt",ifstream::in);
+        fstream ifs("../practica6/Planetas.txt",ifstream::in);
         while(getline(ifs,linea)){
             if(linea.size()>0){
                 cont=0;

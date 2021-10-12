@@ -205,7 +205,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="customview" name="graphicsView">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -231,25 +231,6 @@
     </property>
     <property name="text">
      <string>Agregar planeta</string>
-    </property>
-   </widget>
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>580</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="minimum">
-     <number>-99</number>
-    </property>
-    <property name="value">
-     <number>10</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>
@@ -311,6 +292,13 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>customview</class>
+   <extends>QGraphicsView</extends>
+   <header>customview.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="iconos.qrc"/>
  </resources>

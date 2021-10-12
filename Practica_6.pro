@@ -23,12 +23,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    customview.cpp \
         main.cpp \
         mainwindow.cpp \
     planeta.cpp \
     planetagraf.cpp
 
 HEADERS += \
+    customview.h \
         mainwindow.h \
     planeta.h \
     planetagraf.h
